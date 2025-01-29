@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+        <!-- <button type="button">Please don't submit the form</button> -->
+        <p>
+            <label for="username">Enter a username : </label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a password:</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <p>
+            <label>Enter a number:
+                <input id="number" type="number" placeholder="enter a number" name="num" min="1" max="1000" step="2">
+            </label>
+        </p>
+        <p>
+            <label for="color">Choose a color:</label>
+            <input type="color" name="color">
+        </p>
+        <button type="button">regular button (won't submit)</button>
+        <button>Submit!!!</button>
+        <!-- <button type="button">Please do not submit the form</button> -->
+        <input type="submit" value="Click me">
+    </form>
+    <hr>
+    <button>Not inside form</button>
+    <h3>Search youtube</h3>
+    <form action="https://www.youtube.com/">
+        <input type="text" placeholder="search" name="serach_query">
+        <button>youtube</button>
+    </form>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <p>
+            <label for="Please select an entree"></label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg">Vegeterian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of cheese:</label>
+            <input type="range" id="cheese" min="1" max="100" value="75" name="cheese_level">
+        </p>
+        <p>
+            <label for="request">Any special request</label>
+            <textarea id="request" rows="10" col="40" placeholder="Type something here" name="Requests"></textarea>
+        </p>
+        <p>
+            <input type="email" required>
+            <input type="url">
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

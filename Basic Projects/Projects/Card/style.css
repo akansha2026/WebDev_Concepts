@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+/* Remove global style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 
+1010 => 2^0 * 0 + 2^1 * 1 + 2^2 * 0 + 2^3 * 1
+ff => 16^10 * 15 + 16^1 * 15 => 255
+r => 0 - 255
+g => 0 - 255
+b => 0 - 255
+
+rgb(255, 255, 255) => white
+rgb(0, 0, 0) => black
+rgb(255, 0, 0) => red
+rgb(0, 255, 0) => green
+rgb(0, 0, 255) => blue
+
+alpha = 0 - 1 (float)
+rgba(255, 255, 255, 0.5) => white
+
+#ffffff => white
+#000000 => black
+#ff0000 => red
+#00ff00 => green
+#0000ff => blue
+
+many other color are possible
+*/
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: skyblue;
+    background: url("https://source.unsplash.com/random");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Color */
+    /* hexadecimal */
+    /* rgb */
+    /* rgba */
+    /* hsl */
+
+    /* To make anything center */
+    display: flex;
+    justify-content: center; /* main-axis */
+    align-items: center; /* cross-axis */
+}
+
+.container{
+    width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 25px;
+    /* box-shadow: horizontal vertical blur spread */
+    background-color: rgb(166, 243, 206);
+    transition: all 0.2s linear;
+}
+
+/* Styling chain */
+.container .card{
+    position: relative;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    transition: all 0.2s linear;
+}
+
+.container .card .btn{
+    border: none;
+    outline:none;
+    background-color: rgb(146, 241, 195);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+
+    /* Transition */
+    transition: all 0.2s linear;
+}
+
+.container .card .number{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 48px;
+    color: gray;
+}
+
+/* Interactions */
+/* click */
+/* hover */
+
+.container .card .btn:hover{
+    cursor: pointer;
+    background-color: white;
+
+    /* Size */
+    transform: scale(1.1);
+}
+
+.container .card .btn:active{
+    transform: scale(0.9);
+}
+
+.container:hover .card{
+    background-color: rgb(43, 131, 137);
+    color:white;
+    transform: translateY(-30px) translateX(30px);
+}
+
+.container:hover .number{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.container .card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}

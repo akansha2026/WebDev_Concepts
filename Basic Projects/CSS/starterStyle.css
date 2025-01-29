@@ -1,0 +1,91 @@
+/* *{
+    color: blueviolet;
+    background-color: aqua;
+} */
+body{
+    background-color: #f1faee;
+}
+
+h1,h2{
+    color: #1d3557;
+}
+/* for id selector we use # before the name */
+#signup{
+    background-color: #1d3557;
+    color: #f1faee;
+}
+span{
+    color: #457b9d;
+}
+
+/* use " . " before class name */
+.tag{
+    background-color: #e63;
+    color: bisque;
+    font-size: 20px;
+}
+
+/* h2 + button{
+    font-size: 20px;
+} */
+footer > a{
+    color: #237275;
+}
+
+input[type="password"]{
+    color: blueviolet;
+}
+
+/* section[class="post"]{
+    background-color: palegreen;
+} */
+
+.post a:hover{
+    text-decoration: underline;
+}
+
+.post button:active{
+    background-color: aqua;
+}
+
+/* .post:nth-of-type(3n){
+    background-color: #ddea96;
+} */
+h2::first-letter{
+    font-size: 50px;
+}
+/* p::first-line{
+    color: purple;
+} */
+
+/* p::selection{
+    background-color: #ddea96;
+}  */
+
+.post button:hover{
+    background-color:#e63946;
+    color: #f1faee;
+}
+button:hover{
+    background-color: olive;
+    font-size: 10px;
+}
+li{
+    color:blue;
+}
+.yes{
+    color: green;
+}
+ul li{
+    color: magenta;
+}
+
+#submit{
+    color: blue;
+}
+.btn{
+    color: pink;
+}
+p button.submit{
+    color: magenta;
+}
